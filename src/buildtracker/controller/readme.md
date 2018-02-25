@@ -31,6 +31,10 @@ func (h home) registerRoutes() {
 	http.HandleFunc("/", h.handleHome)
 }
 ```
-We don't want to forget about some static routes like images and css resources.  
+We don't want to forget about some static routes like images and css resources.  So these lines take care of that.
+```
+http.Handle("/img/", http.FileServer(http.Dir("../public")))
+http.Handle("/css/", http.FileServer(http.Dir("../public")))
+``` 
 
 > The paths are important, remember when you execute the build tracker web app it will start in the \bin directory, just take note of the paths.  This was the most challenging part of getting this to work.  
