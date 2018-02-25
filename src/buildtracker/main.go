@@ -1,10 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"firstwebapp/controller"
+	"net/http"
 )
 
 func main() {
-	x := "Hello, class!"
-	fmt.Println(x)
+	templates := populateTemplates()
+	controller.Startup(templates)
+	http.ListenAndServe(":8000", nil)
 }
