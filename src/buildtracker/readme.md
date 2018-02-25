@@ -20,5 +20,5 @@ Our application uses an MVC framework.
 * Controllers are stored in the `src\buildtracker\controllers` folder and those act to route requests.  While routing engines like Gorilla/Mux and Http Router could be used I tried to stay vanilla with Go. 
 
 ## Controllers and Views
-Controllers will route users throughout the application.  Before we can start the web server we first must build a controller to take care of the home page and build the templates, or html pages along with the supporting files such as and images, client-side javascript and style sheets.  Those are saved in the `templates` folder.  See [Templates](../readme.md) for more explination. 
+Controllers will route users throughout the application.  Before we can start the web server we first must build a controller to take care of the home page and build the templates, or html pages along with the supporting files such as and images, client-side javascript and style sheets.  Those are saved in the `templates` folder.  See [Templates](./readme.md) for more explination. 
 
